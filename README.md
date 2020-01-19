@@ -1,4 +1,4 @@
-# Smart Countdown Timer implemented in React.js
+# Smart Countdown Timer in React.js
 
 The user can set the Countdown value and start the timer.
 The timer supports the following features:
