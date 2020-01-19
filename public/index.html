@@ -11,3 +11,38 @@
     <script src='./bundle.js'></script>
 </body>
 </html>
+
+<script>
+	//For handling Keyboard events - Space(split) and Backspace(merge)
+	document.addEventListener('keydown', (event) => {
+		const code = event.code;
+		
+		//Spacebar
+		if(code == "Space") {
+			const splitButton = document.getElementById('splitButton');
+			if(splitButton) {
+				splitButton.classList.add('active');
+				setTimeout(()=> {
+					splitButton.click();
+					splitButton.classList.remove('active');
+				}, 20);
+				event.preventDefault();
+				return false;
+			}
+		}
+		
+		//Backspace
+		else if(code == "Backspace") {
+			const undoButton = document.getElementById('undoButton');
+			if(undoButton) {
+				undoButton.classList.add('active');
+				setTimeout(()=> {
+					undoButton.click();
+					undoButton.classList.remove('active');
+				}, 20);
+				event.preventDefault();
+				return false;
+			}
+		}
+	});
+</script>
