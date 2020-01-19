@@ -26,78 +26,81 @@ class Settings extends React.Component {
         }
         return(
             <div className='settingsSection'>
-                <div className='setCountdownTimer'>
-                    <div className='settingsHeader'>Set Countdown</div>
-                    <div className='timer'>
-                        <div className='counterInput'>
-                            <div className='counterInputHeader'>Hours</div>
-                            <div className='counterInputTextbox'>
-                                <input type='text' placeholder='hh' id='target_hours' maxLength='2'
-                                    defaultValue={this.state.target_hours}
-                                    onKeyUp={(event) => this.handleKeyUp(event, 23)}
-                                    onBlur={(event) => this.handleBlur(event)}/>
+                <div className='settingsSectionHeader'>Set Timer Values</div>
+                <div className='settingsSectionContent'>
+                    <div className='setCountdownTimer'>
+                        <div className='settingsHeader'>Set Countdown</div>
+                        <div className='timer'>
+                            <div className='counterInput'>
+                                <div className='counterInputHeader'>Hours</div>
+                                <div className='counterInputTextbox'>
+                                    <input type='text' placeholder='hh' id='target_hours' maxLength='2'
+                                        defaultValue={this.state.target_hours}
+                                        onKeyUp={(event) => this.handleKeyUp(event, 23)}
+                                        onBlur={(event) => this.handleBlur(event)}/>
+                                </div>
                             </div>
+                            <div className='counterInputSeparator'>:</div>
+                            <div className='counterInput'>
+                                <div className='counterInputHeader'>Minutes</div>
+                                <div className='counterInputTextbox'>
+                                    <input type='text' placeholder='mm' id='target_minutes' maxLength='2' 
+                                        defaultValue={this.state.target_minutes}
+                                        onKeyUp={(event) => this.handleKeyUp(event, 59)}
+                                        onBlur={(event) => this.handleBlur(event)}/>
+                                </div>
+                            </div>
+                            <div className='counterInputSeparator'>:</div>
+                            <div className='counterInput'>
+                                <div className='counterInputHeader'>Seconds</div>
+                                <div className='counterInputTextbox'>
+                                    <input type='text' placeholder='ss' id='target_seconds' maxLength='2' 
+                                        defaultValue={this.state.target_seconds}
+                                        onKeyUp={(event) => this.handleKeyUp(event, 59)}
+                                        onBlur={(event) => this.handleBlur(event)}/>
+                                </div>
+                            </div>                                        
                         </div>
-                        <div className='counterInputSeparator'>:</div>
-                        <div className='counterInput'>
-                            <div className='counterInputHeader'>Minutes</div>
-                            <div className='counterInputTextbox'>
-                                <input type='text' placeholder='mm' id='target_minutes' maxLength='2' 
-                                    defaultValue={this.state.target_minutes}
-                                    onKeyUp={(event) => this.handleKeyUp(event, 59)}
-                                    onBlur={(event) => this.handleBlur(event)}/>
-                            </div>
-                        </div>
-                        <div className='counterInputSeparator'>:</div>
-                        <div className='counterInput'>
-                            <div className='counterInputHeader'>Seconds</div>
-                            <div className='counterInputTextbox'>
-                                <input type='text' placeholder='ss' id='target_seconds' maxLength='2' 
-                                    defaultValue={this.state.target_seconds}
-                                    onKeyUp={(event) => this.handleKeyUp(event, 59)}
-                                    onBlur={(event) => this.handleBlur(event)}/>
-                            </div>
-                        </div>                                        
+                        <div className='targetInputErrorMessage'>{this.state.target_error_message}</div>
                     </div>
-                    <div className='targetInputErrorMessage'>{this.state.target_error_message}</div>
-                </div>
-                <div className='setThreshold'>
-                    <div className='settingsHeader'>Set Threshold</div>
-                    <div className='threshold'>
-                        <div className='counterInput'>
-                            <div className='counterInputHeader'>Hours</div>
-                            <div className='counterInputTextbox'>
-                                <input type='text' placeholder='hh' id='threshold_hours' maxLength='2' 
-                                    defaultValue={this.state.threshold_hours}
-                                    onKeyUp={(event) => this.handleKeyUp(event, 23)}
-                                    onBlur={(event) => this.handleBlur(event)}/>
+                    <div className='setThreshold'>
+                        <div className='settingsHeader'>Set Threshold</div>
+                        <div className='threshold'>
+                            <div className='counterInput'>
+                                <div className='counterInputHeader'>Hours</div>
+                                <div className='counterInputTextbox'>
+                                    <input type='text' placeholder='hh' id='threshold_hours' maxLength='2' 
+                                        defaultValue={this.state.threshold_hours}
+                                        onKeyUp={(event) => this.handleKeyUp(event, 23)}
+                                        onBlur={(event) => this.handleBlur(event)}/>
+                                </div>
                             </div>
+                            <div className='counterInputSeparator'>:</div>
+                            <div className='counterInput'>
+                                <div className='counterInputHeader'>Minutes</div>
+                                <div className='counterInputTextbox'>
+                                    <input type='text' placeholder='mm' id='threshold_minutes' maxLength='2' 
+                                        defaultValue={this.state.threshold_minutes}
+                                        onKeyUp={(event) => this.handleKeyUp(event, 59)}
+                                        onBlur={(event) => this.handleBlur(event)}/>
+                                </div>
+                            </div>
+                            <div className='counterInputSeparator'>:</div>
+                            <div className='counterInput'>
+                                <div className='counterInputHeader'>Seconds</div>
+                                <div className='counterInputTextbox'>
+                                    <input type='text' placeholder='ss' id='threshold_seconds' maxLength='2' 
+                                        defaultValue={this.state.threshold_seconds}
+                                        onKeyUp={(event) => this.handleKeyUp(event, 59)}
+                                        onBlur={(event) => this.handleBlur(event)}/>
+                                </div>
+                            </div>                                        
                         </div>
-                        <div className='counterInputSeparator'>:</div>
-                        <div className='counterInput'>
-                            <div className='counterInputHeader'>Minutes</div>
-                            <div className='counterInputTextbox'>
-                                <input type='text' placeholder='mm' id='threshold_minutes' maxLength='2' 
-                                    defaultValue={this.state.threshold_minutes}
-                                    onKeyUp={(event) => this.handleKeyUp(event, 59)}
-                                    onBlur={(event) => this.handleBlur(event)}/>
-                            </div>
-                        </div>
-                        <div className='counterInputSeparator'>:</div>
-                        <div className='counterInput'>
-                            <div className='counterInputHeader'>Seconds</div>
-                            <div className='counterInputTextbox'>
-                                <input type='text' placeholder='ss' id='threshold_seconds' maxLength='2' 
-                                    defaultValue={this.state.threshold_seconds}
-                                    onKeyUp={(event) => this.handleKeyUp(event, 59)}
-                                    onBlur={(event) => this.handleBlur(event)}/>
-                            </div>
-                        </div>                                        
+                        <div className='thresholdInputErrorMessage'>{this.state.threshold_error_message}</div>
+                    </div>  
+                    <div className='actionsSection'>
+                        <button className='btnStartTimer' id='btnStartTimer' onClick={(event) => this.handleStartCounter(event)}>Start Counter</button>
                     </div>
-                    <div className='thresholdInputErrorMessage'>{this.state.threshold_error_message}</div>
-                </div>  
-                <div className='actionsSection'>
-                    <button className='btnStartTimer' id='btnStartTimer' onClick={(event) => this.handleStartCounter(event)}>Start Counter</button>
                 </div>          
             </div>
         );
