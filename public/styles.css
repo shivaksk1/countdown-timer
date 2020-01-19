@@ -1,0 +1,88 @@
+div{margin:0px; padding:0px; box-sizing:border-box; font-family:'PT Sans', Arial;}
+body{margin:0px; padding:0px;}
+.header{background-color:#333; color:#fefefe; height:50px; padding-top:10px; padding-left:50px; font-size:20px;}
+input[type='text']{width:50px; height:50px; text-align:center;}
+
+.main{display:flex; flex-direction:row; align-items:center;justify-content:center;}
+
+/* Settings Section */
+.settingsSection{display:inline-block; vertical-align:middle; margin-top:50px; border:1px solid darkgray;}
+.settingsSectionHeader{height:50px; background-color:deepskyblue; color:white; padding-top:10px; text-align:center;}
+.settingsSectionContent{padding:50px; padding-top:40px;}
+.settingsHeader{font-weight:bold; margin-bottom:10px;}
+.counterInput{display:inline-block; vertical-align:center; margin-top:10px;}
+.counterInputHeader{color:#aaa; font-size:14px;}
+.targetInputErrorMessage{margin-top:10px; color:red; font-size:14px; min-height:30px;}
+.thresholdInputErrorMessage{margin-top:10px; color:red; font-size:14px; min-height:20px;}
+.counterInputTextbox{width:50px; height:50px; text-align:center;}
+.counterInputSeparator{display:inline-block; vertical-align:center; margin-left:3px; margin-right:3px;}
+.actionsSection{margin-top:10px;}
+.btnStartTimer{width:170px; height:40px; box-shadow: 5px 5px 5px  rgba(0,0,0,0.1); font-size:15px; text-align:center; background-color:mediumaquamarine; color:#fff; cursor:pointer; border:0px; border-radius:3px;}
+
+/* Clock Display */
+.heroSection{display:inline-block; vertical-align:middle; }
+.clockSection{display:inline-block; vertical-align:middle; margin-top:50px; text-align:center;}
+.clockDisplay{}
+.overflowIndicator{display:inline-block; vertical-align:middle; font-size:40px; font-weight:bold; width:15px; margin-top:15px;}
+.clockHeaderRow{color:#aaa; font-size:16px; font-weight:normal;}
+.clockHeader{display:inline-block; vertical-align:middle; width:85px;}
+.clockValue{font-weight:bold; font-size:70px;}
+.clockActions{margin-top:20px;}
+.clockButton{display:inline-block; vertical-align:middle; padding-top:30px; cursor:pointer;
+    width:80px; height:80px; border:0px; border-radius:80px; border:1px solid #ddd; margin-right:10px;
+    box-shadow:  3px 3px 3px  rgba(0,0,0,0.2);
+    user-select:none;}
+.pauseTheme{background-color:coral !important; color:#eee !important; border:0px !important;}
+.resumeTheme{background-color:mediumaquamarine !important; color:#eee !important; border:0px;}
+.notActive{color:#ccc !important; cursor:not-allowed; background-color:white !important; border:1px solid #ddd !important;}
+#splitButton:active{background-color:deepskyblue; color:white; border:0px;}
+.active{background-color:deepskyblue; color:white; border:0px;}
+#undoButton:active{background-color:deepskyblue; color:white; border:0px;}
+.backToSettings{margin-top:20px; padding-left:20px;}
+.btnBack{height:35px; padding-left:10px; padding-right:10px; border-radius:3px; border:1px solid #ddd; cursor:pointer; background-color:whitesmoke; }
+.beyondThreshold{color:coral !important;}
+
+/* Keyboard Shortcuts */
+.shortcutsSection{margin-top:20px; text-align:center;}
+.shortcutsSectionHeader{display:inline-block; vertical-align:middle; font-weight:bold; font-size:14px;}
+.shortcut{display:inline-block; vertical-align:middle; margin-left:20px; font-size:14px; color:#777; margin-top:10px; margin-bottom:10px; }
+.shortcutKey{display:inline-block; vertical-align:middle; color:#555;}
+.shortcutDescription{display:inline-block; vertical-align:middle; margin-left:10px;}
+
+/* Current Lap Snapshot Section */
+.snapshotViewSection{margin-top:20px;}
+.snapshotTable{}
+.snapshot{display:inline-block; vertical-align:middle; border:1px solid #ddd; width:120px; height:55px; padding-top:5px; border-left:0px;}
+.snapshot:first-child{border-left:1px solid #ddd;}
+.snapshotHeader{font-size:12px; color:#aaa;}
+.snapshotText{margin-top:5px;}
+
+/* Laps Section */
+.lapsSection{display:inline-block; vertical-align:top; margin-top:60px; margin-left:100px;}
+.lapsSectionHeader{font-weight:bold; font-size:16px; border-bottom:1px solid #ddd; padding-bottom:5px;}
+.lapTableHeader{margin-bottom:10px; margin-top:10px; font-weight:bold; font-size:15px; color:#555; }
+.noLaps{color:#aaa;}
+.lap{font-size:14px; height:20px; color:#777;}
+.lapsTable{margin-top:10px;}
+.lapHeader{font-weight:bold; font-style:italic; font-size:14px;}
+.sno{display:inline-block; vertical-align:middle; width:50px;}
+.lapStartTime{display:inline-block; vertical-align:middle; width:100px;}
+.lapEndTime{display:inline-block; vertical-align:middle; width:100px;}
+.lapDuration{display:inline-block; vertical-align:middle; width:100px;}
+
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    .heroSection{margin-bottom:200px;}
+    .clockSection{display:block;}
+    .lapsSection{margin-left:0px;}
+}
+
+@media screen and (max-width: 400px) {
+    .heroSection{margin-bottom:200px;}
+    .clockSection{display:block;}
+    .lapsSection{margin-left:0px;}
+    .clockHeader{width:70px;}
+    .clockValue{font-size:55px;}
+    .clockButton{width:60px; height:60px; border-radius:60px; padding-top:20px; font-size:14px;}
+}

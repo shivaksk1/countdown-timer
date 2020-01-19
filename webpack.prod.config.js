@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     'entry': './src/index.js',
@@ -9,7 +10,11 @@ module.exports = {
         'filename': 'bundle.js'
     },
     'plugins': [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new CopyWebpackPlugin([
+            { from: 'public/index.html', to: './'},
+            { from: 'public/styles.css', to: './'}
+        ])        
     ],
     'resolve': {
         'extensions': ['*', '.js', '.jsx']
