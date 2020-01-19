@@ -1,6 +1,6 @@
 # Smart Countdown Timer in React.js
 
-The user can set the Countdown value and start the timer.
+This Repo is a simple implementation of a Countdown Timer using React.js.
 The timer supports the following features:
 * Start/Stop, Play/Resume.
 * Laps
