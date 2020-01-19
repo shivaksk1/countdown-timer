@@ -6,7 +6,9 @@ input[type='text']{width:50px; height:50px; text-align:center;}
 .main{display:flex; flex-direction:row; align-items:center;justify-content:center;}
 
 /* Settings Section */
-.settingsSection{padding:50px; width:400px; display:inline-block; vertical-align:middle;}
+.settingsSection{display:inline-block; vertical-align:middle; margin-top:50px; border:1px solid darkgray;}
+.settingsSectionHeader{height:50px; background-color:deepskyblue; color:white; padding-top:10px; text-align:center;}
+.settingsSectionContent{padding:50px; padding-top:40px;}
 .settingsHeader{font-weight:bold; margin-bottom:10px;}
 .counterInput{display:inline-block; vertical-align:center; margin-top:10px;}
 .counterInputHeader{color:#aaa; font-size:14px;}
@@ -72,14 +74,12 @@ input[type='text']{width:50px; height:50px; text-align:center;}
 /* Responsive */
 @media screen and (max-width: 800px) {
     .heroSection{margin-bottom:200px;}
-    .settingsSection{width:auto;}
     .clockSection{display:block;}
     .lapsSection{margin-left:0px;}
 }
 
 @media screen and (max-width: 400px) {
     .heroSection{margin-bottom:200px;}
-    .settingsSection{width:auto;}
     .clockSection{display:block;}
     .lapsSection{margin-left:0px;}
     .clockHeader{width:70px;}
