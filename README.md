@@ -39,8 +39,8 @@ After cloning the repository, and running npm install, execute the following com
 ```
 npm run start-dev
 ```
-This would build the sources, and also start a dev server on port 4040.
-The timer can then be accessed by http://localhost:4040 from the browser.
+This would build the sources, and also start a dev server on port 4000.
+The timer can then be accessed by http://localhost:4000 from the browser.
 
 ## Running Tests
 Execute the following command to run the integration tests:
