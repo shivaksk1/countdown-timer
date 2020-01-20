@@ -49,11 +49,23 @@ npm run test
 ```
 
 ## Screenshots
+
+### Landing Screen
 ![Landing Screen](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/home.png)
+
+### Timer Started
 ![Timer started](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_started.png)
+
+### Timer Paused
 ![Timer Paused](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_paused.png)
+
+### Timer With Lap
 ![Timer with Lap](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_with_laps.png)
+
+### Current Lap beyond Threshold value
 ![Current Lap Overflow](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_current_lap_overflow.png)
+
+### Counter overflow
 ![Timer Overflow](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_overflow.png)
 
 
