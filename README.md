@@ -48,3 +48,12 @@ Execute the following command to run the integration tests:
 npm run test
 ```
 
+## Screenshots
+![Landing Screen] https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/home.png
+![Timer started] https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_started.png
+![Timer Paused] https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_paused.png
+![Timer with Lap] https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_with_laps.png
+![Current Lap Overflow] https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_current_lap_overflow.png
+![Timer Overflow] https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_overflow.png
+
+
