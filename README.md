@@ -49,12 +49,11 @@ npm run test
 ```
 
 ## Screenshots
-![VS Code Jest Preview](https://cloud.githubusercontent.com/assets/49038/20795349/a032308a-b7c8-11e6-9b34-7eeac781003f.png)
-![Landing Screen] (https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/home.png)
-![Timer started] (https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_started.png)
-![Timer Paused] (https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_paused.png)
-![Timer with Lap] (https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_with_laps.png)
-![Current Lap Overflow] (https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_current_lap_overflow.png)
-![Timer Overflow] (https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_overflow.png)
+![Landing Screen](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/home.png)
+![Timer started](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_started.png)
+![Timer Paused](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_paused.png)
+![Timer with Lap](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_with_laps.png)
+![Current Lap Overflow](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_current_lap_overflow.png)
+![Timer Overflow](https://raw.githubusercontent.com/shivaksk1/countdown-timer/master/screenshots/timer_overflow.png)
 
 
